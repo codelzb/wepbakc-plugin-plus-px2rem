@@ -1,0 +1,22 @@
+{
+  "name": "webpack-px2rem-plus-loader",
+  "author": {
+    "name": "ZebLuo"
+  },
+  "version": "1.0.2",
+  "deprecated": false,
+  "bundleDependencies": false,
+  "license": "MIT",
+  "main": "index.js",
+  "description": "change px unit in css to rem, copy and fix media query bug from plugin of CallMeXYZ",
+  "keywords": [
+    "webpack",
+    "px",
+    "rem",
+    "css"
+  ],
+  "dependencies": {
+    "loader-utils": "^0.2.11",
+    "lodash": "^4.17.11"
+  }
+}
