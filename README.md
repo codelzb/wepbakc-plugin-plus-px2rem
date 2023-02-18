@@ -47,7 +47,7 @@ div {
 
 ## 安装
 ```javascript
-npm install webpack-px2rem-loader --save-dev
+npm install webpack-px2rem-plus-loader --save-dev
 ```
 
 ## 使用
@@ -61,7 +61,7 @@ module.exports={
         rules:[
             {
                 test:/\.jsx$/,
-                loader:'webpack-px2rem-loader',
+                loader:'webpack-px2rem-plus-loader',
                 // 这个配置是可选的
                  query:{
                     // 1rem=npx 默认为 10
@@ -73,6 +73,8 @@ module.exports={
                     floatWidth:3
                     // 排除要转换的px数值
                     exclude:0,
+                    // 跟随其他插件开关
+                    // followPostcss:'postcss-pxtorem'
                 }
 
             }
