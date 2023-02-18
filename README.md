@@ -4,9 +4,6 @@
 (media query 是不能改变的，如：@media (max-width:640px))
 
 ## px2rem
-![npm](https://img.shields.io/npm/v/webpack-px2rem-loader.svg)
-![NPM](https://img.shields.io/npm/l/webpack-px2rem-loader.svg)
-![npm](https://img.shields.io/npm/dt/webpack-px2rem-loader.svg)
 
 开发响应式网页，尤其是手机端，常常采取rem单位。这个webpack的小loader主要是省去了每次输入长、宽、字体等都要把像素px换算成rem的麻烦，
 开发时直接输入px,最后打包打包时换算为rem。
@@ -17,7 +14,6 @@
 - [介绍](#介绍)
 - [安装](#安装)
 - [使用](#使用)
-- [原插件](#原插件)
 
 ## 介绍
 这是你原先的css或者js代码
@@ -47,7 +43,7 @@ div {
 
 ## 安装
 ```javascript
-npm install webpack-px2rem-loader --save-dev
+npm install webpack-px2rem-plus-loader --save-dev
 ```
 
 ## 使用
@@ -61,7 +57,7 @@ module.exports={
         rules:[
             {
                 test:/\.jsx$/,
-                loader:'webpack-px2rem-loader',
+                loader:'webpack-px2rem-plus-loader',
                 // 这个配置是可选的
                  query:{
                     // 1rem=npx 默认为 10
@@ -73,6 +69,8 @@ module.exports={
                     floatWidth:3
                     // 排除要转换的px数值
                     exclude:0,
+                    // 跟随其他插件开关
+                    // followPostcss:'postcss-pxtorem'
                 }
 
             }
