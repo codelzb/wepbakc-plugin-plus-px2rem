@@ -12,7 +12,7 @@ try{
 module.exports = function (source) {
     if (_.isUndefined(this.cacheable)) return source;
     this.cacheable();
-    var query = utils.parseQuery(this.query),
+    var query = utils.getOptions(this),
         basePx = !_.isUndefined(query.basePx) ? query.basePx : 10,
         min = !_.isUndefined(query.min) ? query.min : 0,
         exclude = !_.isUndefined(query.exclude) ? query.exclude : null,

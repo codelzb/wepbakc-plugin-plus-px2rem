@@ -3,7 +3,7 @@
   "author": {
     "name": "ZebLuo"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "deprecated": false,
   "bundleDependencies": false,
   "license": "MIT",
@@ -16,7 +16,7 @@
     "css"
   ],
   "dependencies": {
-    "loader-utils": "^0.2.11",
+    "loader-utils": "^1.4.2",
     "lodash": "^4.17.11"
   }
 }
